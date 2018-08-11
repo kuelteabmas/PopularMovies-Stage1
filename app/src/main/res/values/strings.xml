@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PopularMovies Stage 1</string>
+
+    <!-- include your api key here. Name it my_api_key -->
+</resources>

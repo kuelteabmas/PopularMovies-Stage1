@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovieDetailActivity">
+
+    <TextView
+        android:id="@+id/text_view_movie_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Movie Name"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:padding="8dp"/>
+
+    <View
+        android:id="@+id/line_separator_1"
+        android:layout_height="1dp"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/text_view_movie_title"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#000000"
+        />
+
+    <LinearLayout
+        android:id="@+id/details_layout_movie_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_below="@+id/text_view_movie_title">
+
+        <ImageView
+            android:id="@+id/image_view_movie_poster_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/text_view_release_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2015-01-08"
+                android:textSize="20sp"/>
+
+
+            <TextView
+                android:id="@+id/text_view_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rating: 4/5"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_separator"
+        android:layout_height="1dp"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/details_layout_movie_details"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#000000"
+        />
+
+    <LinearLayout
+        android:id="@+id/details_layout_synopsis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/details_layout_movie_details"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Plot Synopsis"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_view_synopsis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Plot Synopsis" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="364dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>
