@@ -22,7 +22,6 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHol
 
     // Base URL and image size for the movie poster image URL
     private String baseURL = "http://image.tmdb.org/t/p/";
-    //private String posterSize = "w185";
     private String posterSize = "original";
 
     // Define an interface for the OnClick

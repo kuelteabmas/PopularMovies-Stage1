@@ -1,5 +1,10 @@
 <resources>
-    <string name="app_name">PopularMovies Stage 1</string>
+    <string name="app_name">CinemaFlix</string>
 
-    <!-- include your api key here. Name it my_api_key -->
+    <string name="most_popular">Most Popular</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="top_rated_movies">"Top Rated Movies"</string>
+    <string name="most_pop_movies">"Top Rated Movies"</string>
+    <string name="connection">Check your network settings</string>
+
 </resources>

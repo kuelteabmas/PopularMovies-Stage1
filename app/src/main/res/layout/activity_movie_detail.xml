@@ -14,7 +14,7 @@
         android:text="Movie Name"
         android:textSize="30dp"
         android:textStyle="bold"
-        android:padding="8dp"/>
+        android:padding="10dp"/>
 
     <View
         android:id="@+id/line_separator_1"
@@ -31,7 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="8dp"
+        android:padding="10dp"
         android:layout_below="@+id/text_view_movie_title">
 
         <ImageView
@@ -44,7 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="8dp">
+            android:padding="10dp">
 
             <TextView
                 android:id="@+id/text_view_release_date"
@@ -82,7 +82,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_below="@+id/details_layout_movie_details"
-        android:padding="8dp">
+        android:padding="10dp">
 
         <TextView
             android:layout_width="match_parent"
