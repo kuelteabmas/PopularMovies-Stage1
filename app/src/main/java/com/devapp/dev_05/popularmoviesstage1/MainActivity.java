@@ -93,9 +93,7 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.OnIt
             case R.id.most_popular:
                 mRecyclerView = findViewById(R.id.recycler_view);
                 mGridLayoutManager = new GridLayoutManager(MainActivity.this, 2);
-                //mRecyclerView.setHasFixedSize(true);
                 mRecyclerView.setLayoutManager(mGridLayoutManager);
-                //mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
                 mMovieList = new ArrayList<>();
                 mRequestQueue = Volley.newRequestQueue(this);
                 parseJSON(url_most_popular);

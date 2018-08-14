@@ -57,6 +57,8 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHol
                 .load(baseURL+posterSize+imageUrl)
                 .error(R.drawable.ic_launcher_background)
                 .resize(1000, 800)
+                .placeholder(R.drawable.ic_launcher_background)
+                .error(R.drawable.photo_not_available)
                 .centerInside()
                 .into(holder.mImageView);
     }

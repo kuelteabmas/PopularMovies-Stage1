@@ -8,6 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -57,6 +58,8 @@ public class MovieDetailActivity extends AppCompatActivity {
                 .load(baseURL + posterSize + imageUrl)
                 .error(R.drawable.ic_launcher_background)
                 .resize(1000, 800)
+                .placeholder(R.drawable.ic_launcher_background)
+                .error(R.drawable.photo_not_available)
                 .centerInside()
                 .into(imageView);
 
