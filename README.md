@@ -1,5 +1,5 @@
-# PopularMovies-Stage1
-## Project 2 of Udacity Android Developer Nanodegree. 
+# Popular Movies - Stage 1
+## Project 2 of Udacity Android Developer Nanodegree
 Fetches data from themoviedb.org API. 
 Displays the movies in a grid list and shows movie details of the selected movie including title, poster, user rating, synopsis and release date.
 
